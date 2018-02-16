@@ -1,53 +1,5 @@
 /* ------------------------ */
-/* --------Header---------- */
-/* ------------------------ */
-header{
-    background-color: #ffffff;
-    border-bottom: 2px solid #cccccc;
-}
-
-.header-wrapper {
-    /* set wrapper to same width as content area and center using "auto" margins */
-    /* this in conjunction w/ "justify:space-between" helps keep header items flush with content items */
-    width: 960px;
-    margin-left: auto;
-    margin-right: auto;
-    
-    /* flex-box */
-    display: flex;
-    justify-content: space-between;
-}
-
-.my-name {
-    /* teal box */
-    background-color: #4aaaa5;
-    padding: 30px 30px;
-
-    /* text formatting */
-    color: #ffffff; 
-    font-family: 'Georgia', Times, Times New Roman, serif;
-    font-size: 2em;
-    font-weight: bold;  
-}
-
-nav {
-    /* same width as "aside" to keep them aligned */
-    width: 270px;
-    
-    /* flex-box */
-    display: flex;
-    justify-content: space-around;
-    align-items: center; 
-}
-
-.nav-link {
-    /* text formatting */
-    color:#777777;
-    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;   
-    text-decoration: none; /* to get rid of underline  */
-}
-/* ------------------------ */
-/* --------Main Body------- */
+/* --Main Body - Contact--- */
 /* ------------------------ */
 .content-area {
     background-image: url("../images/concrete_seamless.png");
@@ -94,18 +46,44 @@ main {
     margin-bottom: 20px;
 }
 
-.profile-pic {
-    float: left;
-    padding: 5px 20px 0 0;
+input {
+    width: 100%;
 }
 
-.main-text {
+#form-message {
+    height:200px;
+}
+
+.submit-button {
+        /* teal box */
+        background-color: #4aaaa5;
+        border: none;
+        padding: 10px 30px;
+        margin-top: 20px;
+    
+        /* text formatting */
+        color: #ffffff; 
+        font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+        font-size: 1em;
+
+        /* misc */
+        cursor: pointer;
+        
+        
+        
+}
+
+label {
     /* text formatting */
     color: #777777;
     font-family:  'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     font-size: 1em;
     line-height: 200%;   
 }
+
+/* ------------------------ */
+/* ----------aside--------- */
+/* ------------------------ */
 
 aside {
     /* border formatting */
@@ -154,23 +132,3 @@ aside {
     padding: 4px 4px 3px 3px;
     -border: 1px solid black;
 }
-/* ------------------------ */
-/* --------Footer---------- */
-/* ------------------------ */
-footer {
-    /* gray background and sizing (padding also helps to center text vertically) */
-    background-color: #808080;
-    padding: 40px 0;
-
-    /* teal border seperating page from footer */
-    border-top: 10px solid #4aaaa5;
-     
-    /* "copyright" text formating  */
-    color: #c7c7c7;
-    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-    font-size: 0.75em;
-    text-align: center;
-
-
-}
-
